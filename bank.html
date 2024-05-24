@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css" />
+    <script src="https://kit.fontawesome.com/de2635c2bd.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="!bg-stone-100" style="background-image: none !important; ">
+    <header
+      class="flex justify-between items-center px-10 bg-gray-600 p-3 bg-opacity-10"
+    >
+      <div class="logo">
+        <h2 class="italic">@lign</h2>
+      </div>
+      <div class="flex items-center">
+        <nav class="navigation">
+          <ul>
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="bank.html" class="!text-stone-800">My Bank</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <a href="home.html"><button id="login">Logout</button></a>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="mt-20">
+      <setion >
+        <h2 class="text-white italic text-2xl text-center mx-72 rounded-lg py-2 mb-8" style="background-color: #675A5A;">@lign Commercial Bank Pvt. Ltd</h2>
+        <div class="grid grid-cols-3 gap-4 w-7/12 mx-auto text-white">
+          <div class="bg-stone-300 p-8 rounded-lg font-semibold">
+            <h2 class="text-2xl text-black">Deposit</h2>
+            <h3 class="text-4xl text-black">
+                <i class="fa-solid fa-bangladeshi-taka-sign"></i> 
+                <span id="deposit">00</span>
+            </h3>
+          </div>
+          <div class="bg-stone-300 p-8 rounded-lg text-black font-semibold">
+            <h2 class="text-2xl ">Balance</h2>
+            <h3 class="text-4xl">
+                <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                <span id="balance">00</span></h3>
+          </div>
+          <div class="bg-stone-300 p-8 text-black rounded-lg font-semibold">
+            <h2 class="text-2xl">Withdraw</h2>
+            <h3 class="text-4xl">
+                <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                <span id="withdraw">00</span></h3>
+          </div>
+        </div>
+      </setion>
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-7/12 mx-auto">
+          <div class="bg-stone-400 text-black rounded-lg px-6">
+            <h2 class="text-lg pt-6 pb-2  font-semibold">
+              Please Deposite
+            </h2>
+            <input id="depo-field" class="block w-9/12" type="number" name="" />
+            <button
+              id="deposite-btn"
+              class="bg-stone-800 font-medium text-white my-4 py-1 px-6 rounded-lg hover:bg-stone-900"
+            >
+              Deposite
+            </button>
+          </div>
+          <div class="bg-stone-400 text-black rounded-lg px-6">
+            <h2 class="text-lg pt-6 pb-2 font-semibold">
+              Please Withdraw
+            </h2>
+            <input
+              class="block w-9/12"
+              type="number"
+              name=""
+              id="withdraw-field"
+            />
+            <button
+              id="withdraw-btn"
+              class="bg-stone-800 font-medium text-white my-4 py-1 px-6 rounded-lg hover:bg-stone-900"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="flex justify-center mt-10">
+            <a href="login.html" id="withdraw-btn"  class="bg-blue-500 font-medium  text-white my-4 py-2 px-8 rounded-lg hover:bg-blue-800">Logout</a>
+        </section> -->
+    </main>
+    <footer class="bg-stone-600 absolute bottom-0 w-[100%] text-white text-xl flex justify-between px-10 py-3">
+      <p>@lign commercial Bank Private Limited</p>
+      <p>footer@2024</p>
+    </footer>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>
